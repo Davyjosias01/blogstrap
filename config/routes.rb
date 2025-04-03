@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   root 'articles#index' #nesse comando definimos como view raiz a article#indesx'
 
-  get '/articles', to: 'articles#index'
+  resources :articles
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
   # Can be used by load balancers and uptime monitors to verify that the app is live.
