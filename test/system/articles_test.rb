@@ -14,6 +14,8 @@ class ArticlesTest < ApplicationSystemTestCase
     visit articles_url
     click_on "New article"
 
+    fill_in "Body", with: @article.body
+    fill_in "Name", with: @article.name
     click_on "Create Article"
 
     assert_text "Article was successfully created"
@@ -24,6 +26,8 @@ class ArticlesTest < ApplicationSystemTestCase
     visit article_url(@article)
     click_on "Edit this article", match: :first
 
+    fill_in "Body", with: @article.body
+    fill_in "Name", with: @article.name
     click_on "Update Article"
 
     assert_text "Article was successfully updated"

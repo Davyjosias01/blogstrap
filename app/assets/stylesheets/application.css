@@ -8,3 +8,16 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+ .input-error {
+    border: 1px solid red;
+    background-color: #f8d7da;
+  }
+
+  #error_explanation {
+    color: red;
+    background-color: #f8d7da;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
