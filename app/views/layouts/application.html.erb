@@ -18,12 +18,14 @@
     <link rel="apple-touch-icon" href="/icon.png">
 
     <%# Includes all stylesheet files in app/assets/stylesheets %>
-    <%= javascript_importmap_tags %>
     <%= javascript_include_tag '/packs/js/application.js', 'data-turbolinks-track': 'reload' %>
-
   </head>
 
   <body>
+    <%= render "layouts/topnavbar" %>
+
     <%= yield %>
+
+    <%= render "layouts/footer" %>
   </body>
 </html>

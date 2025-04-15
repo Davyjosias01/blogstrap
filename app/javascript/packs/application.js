@@ -1,8 +1,12 @@
 import "bootstrap"
-import "bootstrap/dist/css/bootstrap.min.css"
+import "../stylesheets/application.scss"
 
-// Comentados para evitar erro, reative se usar Turbo/Stimulus
-// import "@hotwired/turbo-rails"
-// import "controllers"
 
-console.log("Blogstrap carregado com sucesso!");
+// Ativando tooltips do Bootstrap
+document.addEventListener("DOMContentLoaded", function () {
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+})
+
+console.log("Blogstrap carregado com sucesso!")
+console.log("Application JS carregado!");
