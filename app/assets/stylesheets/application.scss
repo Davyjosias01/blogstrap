@@ -8,13 +8,10 @@
  *
  * Consider organizing styles into separate files for maintainability.
  *
- *
- *= require_self
- *= require_tree .
- *
  */
 
 // Importa teu custom do bootstrap
 // app/assets/stylesheets/application.scss
-@import "bootstrap";  // Exemplo de importar o Bootstrap
-@import "bootstrap_custom" 
+
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons';
