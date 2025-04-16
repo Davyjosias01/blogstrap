@@ -1,12 +1,15 @@
+require("@popperjs/core")
+
 import "bootstrap"
+import Turbolinks from 'turbolinks'
 import "../stylesheets/application.scss"
 
+import { Tooltip, Popover} from bootstrap
 
-// Ativando tooltips do Bootstrap
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("turbolinks:load", () => {
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 })
 
+
 console.log("Blogstrap carregado com sucesso!")
-console.log("Application JS carregado!");
